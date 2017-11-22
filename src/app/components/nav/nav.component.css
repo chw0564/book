@@ -1,0 +1,27 @@
+/*导航样式清除*/
+.clearbar{
+	border-radius: 0px;
+	color: white;
+}
+.clearbar img{
+	width: 46px;
+	height: auto;
+}
+.clear-list{
+	margin-bottom: 0px;
+}
+.clear-list >li{
+	line-height: 48px;
+	height: 48px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.clear-list >li:hover{
+    color: #ccc;
+    font-weight: bold;
+}
+.list-title{
+	color: #ccc;
+	font-size: 20px;
+	font-weight: bold;
+}
