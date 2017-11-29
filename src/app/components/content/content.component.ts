@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
+import { Http } from '@angular/http';
+import { DataService } from '../../service/DataService';
 
 @Component({
   selector: 'app-content',
@@ -7,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
-  constructor() { }
+  // 需要加载 默认数据
+  // @Input()
+  // private books;
 
-  ngOnInit() {
+  constructor(
+    private http:Http,
+    private dataServer:DataService
+  ) { }
+
+  //是在组件被访问时 会执行的函数
+  ngOnInit(): void {
+    // this.http.get("/bookApi/book.php")
+    //     .subscribe((response)=>{
+    //       this.books = response.json().result;
+    //     });
+    // this.books = this.dataServer.books;
+    // console.log(this.dataServer);
   }
+  
 
 }

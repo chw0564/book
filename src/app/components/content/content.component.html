@@ -4,8 +4,28 @@
   <!-- carousel end -->
   <!-- book list start -->
   <div class="row">
-    <div class="col-sm-6 col-lg-4">
-      <app-item></app-item>
+    <!-- 
+      使用get 方式传递参数
+      queryParams 指令  用于定义当前请求需要携带的参数
+          接受的参数是一个 {key:value} 对象
+     -->
+    <!-- <div routerLink="/book/detail" [queryParams]="{bookId:book.id}"
+         class="col-sm-6 col-lg-4 cc" 
+         *ngFor="let book of dataServer.books">
+      <app-item [book]="book"></app-item>
+    </div> -->
+
+    <!-- 
+      使用rest 方式传递参数
+        1、 在routerLink 进行拼接
+        2、 指令定义方式
+     -->
+
+    <!-- <div [routerLink]="'/book/detail/'+book.id" -->
+    <div [routerLink]="['/book/detail',book.id]"    
+      class="col-sm-6 col-lg-4 cc" 
+      *ngFor="let book of dataServer.books">
+      <app-item [book]="book"></app-item>
     </div>
   </div>
   <!-- book list end -->

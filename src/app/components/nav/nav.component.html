@@ -6,9 +6,9 @@
         <li>
           <img src="assets/img/logo.png"/>
         </li>
-        <li class="list-title">在线书城</li>
-        <li>关于我们</li>
-        <li>联系我们</li>
+        <li routerLink="/book" [class.list-title]="choose=='book'" (click)="choose = 'book'">在线书城</li>
+        <li routerLink="/about" [class.list-title]="choose=='about'" (click)="choose = 'about'">关于我们</li>
+        <li routerLink="/telAbout" [class.list-title]="choose=='telAbout'" (click)="choose = 'telAbout'">联系我们</li>
       </ul>
     </div>
   </div>

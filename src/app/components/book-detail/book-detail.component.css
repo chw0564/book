@@ -1,0 +1,27 @@
+.comment-user{
+	margin-top: 10px;
+	margin-bottom: 6px;
+	padding: 0px 10px;
+}
+.comment-user > dt{
+	text-align: left;
+    font-size: 18px;
+    font-weight: normal;
+    color: #337ab7;
+}
+.comment-user > dd{
+	text-align: right;
+}
+.comment-start{
+	padding-left: 8px
+}
+.comment-start > img{
+	width: 20px;
+}
+.comment-msg{
+	padding-left: 8px;
+    margin: 10px 0px;
+}
+.comment-list{
+	border-bottom: 1px solid #CCCCCC;
+}

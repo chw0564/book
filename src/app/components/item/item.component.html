@@ -3,13 +3,13 @@
     <img class="slide-img" src="http://via.placeholder.com/320x150" alt="" />
     <dl class="dl-horizontal info-list">
       <dt>
-        <a href="#">第一本书</a>
+        <a href="#">{{ book.bookName }}</a>
       </dt>
-      <dd>￥39.2</dd>
+      <dd>{{ book.price | currency:'CNY':'symbol-narrow':'1.2-2'  }}</dd>
     </dl>
-    <p class="info-list">一本新书像一艘船，带领着我们从狭隘的地方，驶向生活的无限广阔的海洋</p>
+    <p class="info-list">{{ book.des }}</p>
     <!-- star start -->
-    <app-star></app-star>
+    <app-star [level]="book.level"></app-star>
     <!-- star end -->
   </div>
 </div>

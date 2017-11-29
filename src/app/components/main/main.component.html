@@ -2,10 +2,13 @@
 <div class="container-fluid">
   <div class="row">
     <!-- left start -->
-    <app-aside></app-aside>
+    <app-aside (sendSeach)="getParams($event)"></app-aside>
     <!-- left end -->
     <!-- right start -->
-    <app-content></app-content>
+    <!-- <app-content [books]="books"></app-content> -->
+
+    <!-- router-outlet 数据的传递，使用 中央数据总线 -->
+    <router-outlet></router-outlet>
     <!-- right end -->
   </div>
 </div>

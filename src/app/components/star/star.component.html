@@ -1,8 +1,10 @@
 <div>
-  <img src="assets/img/star-open.png"/>
-  <img src="assets/img/star-open.png"/>
+  <img src="{{ level>=item? 'assets/img/star-open.png' : 'assets/img/star-close.png'}}" 
+      *ngFor="let item of stars"
+  />
+  <!-- <img src="assets/img/star-open.png"/>
   <img src="assets/img/star-open.png"/>
   <img src="assets/img/star-close.png"/>
-  <img src="assets/img/star-close.png"/>
-  <span>3星</span>
+  <img src="assets/img/star-close.png"/> -->
+  <span>{{ level }}星</span>
 </div>
