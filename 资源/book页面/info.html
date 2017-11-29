@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>书城详情</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js" ></script>
+	</head>
+	<body>
+		<!-- bar start -->
+		<div class="navbar navbar-inverse clearbar">
+			<div class="row">
+				<div class="col-xs-12 col-lg-10 col-lg-offset-1">
+					<ul class="list-unstyled list-inline clear-list">
+						<li>
+							<img src="img/logo.png"/>
+						</li>
+						<li class="list-title">在线书城</li>
+						<li>关于我们</li>
+						<li>联系我们</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- bar end -->
+		<!-- content start -->
+		<div class="container-fluid">
+			<div class="row">
+				<!-- left start -->
+				<div class="col-sm-3 col-lg-2 col-lg-offset-1">
+					<form>
+					  	<div class="form-group">
+					    	<label for="bookName">书名:</label>
+					    	<input type="text" class="form-control input-sm" id="bookName" placeholder="书名">
+					  	</div>
+					  	<div class="form-group">
+					  	  	<label for="bookPrice">价格:</label>
+					    	<input type="number" class="form-control input-sm" id="bookPrice" placeholder="价格">
+					  	</div>
+					  	<div class="form-group">
+					  		<label for="bookType">类别:</label>
+						 	<select id="bookType" class="form-control input-sm">
+								<option>请选择</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<button type="button" class="btn btn-block btn-sm btn-primary">
+								<i class="glyphicon glyphicon-search"></i>
+								&nbsp;查询
+							</button>
+						</div>
+					</form>
+				</div>
+				<!-- left end -->
+				<!-- right start -->
+				<div class="col-sm-9 col-lg-8">
+					<!-- bookinfo start -->
+					<div class="panel panel-default">
+					  	<div class="panel-body small-padding">
+					    	<img class="slide-img" src="http://via.placeholder.com/800x300"/>
+					    	<dl class="dl-horizontal info-list">
+					    		<dt>
+					    			<a href="#">第一本书</a>
+					    		</dt>
+					    		<dd>39.2元</dd>
+					    	</dl>
+					    	<p class="info-list">一本新书像一艘船，带领着我们从狭隘的地方，驶向生活的无限广阔的海洋</p>
+					    	<div>
+					    		<img src="img/strart-open.png"/>
+					    		<img src="img/strart-open.png"/>
+					    		<img src="img/strart-open.png"/>
+					    		<img src="img/start-close.png"/>
+					    		<img src="img/start-close.png"/>
+					    		<span>3星</span>
+					    	</div>
+					  	</div>
+					</div>
+					<!-- bookinfo end -->
+					<!-- comment start -->
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="panel panel-default">
+							  	<div class="panel-heading">
+							  		<form>
+									  	<div class="form-group row">
+									  		<div class="col-sm-6 col-lg-4">
+									  			<label for="nikeName">昵称:</label>
+									  			<input type="text" class="form-control input-sm" id="nikeName" placeholder="昵称">
+									  			
+									  		</div>
+									  	</div>
+									  	<div class="form-group row">
+									  		<div class="col-sm-6 col-lg-4">
+									  			<label>评级:</label>
+									  			<input type="hidden">
+									  			<div>
+										    		<img src="img/strart-open.png"/>
+										    		<img src="img/strart-open.png"/>
+										    		<img src="img/strart-open.png"/>
+										    		<img src="img/start-close.png"/>
+										    		<img src="img/start-close.png"/>
+										    		<span>3星</span>
+										    	</div>
+									  		</div>
+									  	</div>
+									  	<div class="form-group row">
+									  		<div class="col-sm-12">
+									  			<label for="comment">评论:</label>
+										 		<textarea class="form-control" id="comment" rows="3"></textarea>
+									  		</div>
+										</div>
+										<div class="form-group row">
+											<div class="col-sm-2 col-sm-offset-10 col-lg-1 col-sm-offset-11">
+												<button type="button" class="btn btn-sm btn-success">
+													<i class="glyphicon glyphicon-pencil"></i>
+													&nbsp;发表评论
+												</button>
+											</div>
+										</div>
+									</form>
+							  	</div>
+							  	<div class="panel-body">
+							    	<ul class="list-unstyled comment-list">
+							    		<li>
+							    			<dl class="dl-horizontal comment-user">
+							    				<dt>张三</dt>
+									    		<dd>2017年9月11日</dd>
+							    			</dl>
+							    		</li>
+							    		<li>
+							    			<div class="comment-start">
+									    		<img src="img/strart-open.png"/>
+									    		<img src="img/strart-open.png"/>
+									    		<img src="img/strart-open.png"/>
+									    		<img src="img/start-close.png"/>
+									    		<img src="img/start-close.png"/>
+									    		<span>3星</span>
+									    	</div>
+							    		</li>
+							    		<li>
+							    			<div class="comment-msg">
+							    				睡觉的体验有一种很难明说的规律，晚上到点了睡不着，白天闹钟响了又起不来，
+							    				上班上课时候发困，放假回家有满脸清醒，偶尔午睡还会越睡越困。
+							    				让我们先来回忆一下这些年有多少关于睡眠的小窍门被家长们疯狂转发吧：睡前不能洗澡；
+							    			</div>
+							    		</li>
+							    	</ul>
+							    	
+							    	<ul class="list-unstyled comment-list">
+							    		<li>
+							    			<dl class="dl-horizontal comment-user">
+							    				<dt>张三</dt>
+									    		<dd>2017年9月11日</dd>
+							    			</dl>
+							    		</li>
+							    		<li>
+							    			<div class="comment-start">
+									    		<img src="img/strart-open.png"/>
+									    		<img src="img/strart-open.png"/>
+									    		<img src="img/strart-open.png"/>
+									    		<img src="img/start-close.png"/>
+									    		<img src="img/start-close.png"/>
+									    		<span>3星</span>
+									    	</div>
+							    		</li>
+							    		<li>
+							    			<div class="comment-msg">
+							    				睡觉的体验有一种很难明说的规律，晚上到点了睡不着，白天闹钟响了又起不来，
+							    				上班上课时候发困，放假回家有满脸清醒，偶尔午睡还会越睡越困。
+							    				让我们先来回忆一下这些年有多少关于睡眠的小窍门被家长们疯狂转发吧：睡前不能洗澡；
+							    			</div>
+							    		</li>
+							    	</ul>
+							    	
+							    	<ul class="list-unstyled comment-list">
+							    		<li>
+							    			<dl class="dl-horizontal comment-user">
+							    				<dt>张三</dt>
+									    		<dd>2017年9月11日</dd>
+							    			</dl>
+							    		</li>
+							    		<li>
+							    			<div class="comment-start">
+									    		<img src="img/strart-open.png"/>
+									    		<img src="img/strart-open.png"/>
+									    		<img src="img/strart-open.png"/>
+									    		<img src="img/start-close.png"/>
+									    		<img src="img/start-close.png"/>
+									    		<span>3星</span>
+									    	</div>
+							    		</li>
+							    		<li>
+							    			<div class="comment-msg">
+							    				睡觉的体验有一种很难明说的规律，晚上到点了睡不着，白天闹钟响了又起不来，
+							    				上班上课时候发困，放假回家有满脸清醒，偶尔午睡还会越睡越困。
+							    				让我们先来回忆一下这些年有多少关于睡眠的小窍门被家长们疯狂转发吧：睡前不能洗澡；
+							    			</div>
+							    		</li>
+							    	</ul>
+							    	
+							    	<ul class="list-unstyled comment-list">
+							    		<li>
+							    			<dl class="dl-horizontal comment-user">
+							    				<dt>张三</dt>
+									    		<dd>2017年9月11日</dd>
+							    			</dl>
+							    		</li>
+							    		<li>
+							    			<div class="comment-start">
+									    		<img src="img/strart-open.png"/>
+									    		<img src="img/strart-open.png"/>
+									    		<img src="img/strart-open.png"/>
+									    		<img src="img/start-close.png"/>
+									    		<img src="img/start-close.png"/>
+									    		<span>3星</span>
+									    	</div>
+							    		</li>
+							    		<li>
+							    			<div class="comment-msg">
+							    				睡觉的体验有一种很难明说的规律，晚上到点了睡不着，白天闹钟响了又起不来，
+							    				上班上课时候发困，放假回家有满脸清醒，偶尔午睡还会越睡越困。
+							    				让我们先来回忆一下这些年有多少关于睡眠的小窍门被家长们疯狂转发吧：睡前不能洗澡；
+							    			</div>
+							    		</li>
+							    	</ul>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<!-- comment end -->
+				</div>
+				<!-- right end -->
+			</div>
+		</div>
+		<!-- content end -->
+	</body>
+</html>

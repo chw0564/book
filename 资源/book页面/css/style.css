@@ -1,0 +1,73 @@
+body{
+	overflow-x: hidden;
+}
+/*导航样式清除*/
+.clearbar{
+	border-radius: 0px;
+	color: white;
+}
+.clearbar img{
+	width: 46px;
+	height: auto;
+}
+.clear-list{
+	margin-bottom: 0px;
+}
+.clear-list >li{
+	line-height: 48px;
+	height: 48px;
+	font-size: 16px;
+}
+.list-title{
+	color: #ccc;
+	font-size: 20px;
+	font-weight: bold;
+}
+.slide-img{
+	width: 100%;
+}
+.carousel{
+	margin-bottom: 20px;
+}
+.small-padding{
+	padding: 4px;
+}
+.info-list{
+	margin-top: 10px;
+	margin-bottom: 6px;
+	padding: 0px 10px;
+}
+.info-list > dt{
+	text-align: left;
+	color: #337ab7;
+}
+.info-list > dd{
+	text-align: right;
+}
+.comment-user{
+	margin-top: 10px;
+	margin-bottom: 6px;
+	padding: 0px 10px;
+}
+.comment-user > dt{
+	text-align: left;
+    font-size: 18px;
+    font-weight: normal;
+    color: #337ab7;
+}
+.comment-user > dd{
+	text-align: right;
+}
+.comment-start{
+	padding-left: 8px
+}
+.comment-start > img{
+	width: 20px;
+}
+.comment-msg{
+	padding-left: 8px;
+    margin: 10px 0px;
+}
+.comment-list{
+	border-bottom: 1px solid #CCCCCC;
+}
